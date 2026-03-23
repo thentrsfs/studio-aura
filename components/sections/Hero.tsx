@@ -12,7 +12,7 @@ const Hero = () => {
     Kadeřnictví v Pardubicích
   </h3>
 
-  <h1 className="text-5xl md:text-7xl font-bold uppercase font-display leading-[1.1]">
+  <h1 className="text-5xl md:text-7xl font-bold uppercase font-display tracking-tight leading-[1.1]">
     Studio Aura
   </h1>
 
@@ -25,7 +25,7 @@ const Hero = () => {
       Objednat se
     </button>
 
-    <button className="py-2.5 px-10 rounded-lg border-2 border-background text-white bg-background/5 font-medium hover:bg-background/10 transition cursor-pointer">
+    <button className="py-2.5 px-10 rounded-lg border border-background text-white bg-background/5 font-medium hover:bg-background/10 transition cursor-pointer">
       Zavolat
     </button>
   </div>
@@ -34,7 +34,7 @@ const Hero = () => {
      <Image src={'/images/barber-hero.jpg'} alt="Man haircut" fill className="object-cover" loading="eager" />
      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#000000]/90 to-[#000000]/10"/>
      <div className="absolute top-0 left-0 w-full h-1/2 bg-linear-to-b from-[#000000]/30 to-transparent"/>
-     <div className="absolute bottom-0 left-0 w-full h-10 bg-linear-to-b from-transparent to-background/60"/>
+     <div className="absolute bottom-0 left-0 w-full h-20 bg-linear-to-b from-transparent to-background/50"/>
      </div>
      </div>
   )
