@@ -8,7 +8,7 @@ const Hero = () => {
      <div className="relative w-full h-[80vh]">
        <div className="absolute z-10 top-1/2 left-8 md:left-36 -translate-y-1/2 text-white max-w-xl flex flex-col gap-5">
 
-  <h3 className="text-sm md:text-lg font-medium text-white/80">
+  <h3 className="text-sm md:text-base font-medium text-background">
     Kadeřnictví v Pardubicích
   </h3>
 
@@ -25,14 +25,14 @@ const Hero = () => {
       Objednat se
     </button>
 
-    <button className="py-2.5 px-10 rounded-lg bg-background text-black font-medium hover:bg-background-hover transition cursor-pointer">
+    <button className="py-2.5 px-10 rounded-lg border-2 border-background text-white bg-background/5 font-medium hover:bg-background/10 transition cursor-pointer">
       Zavolat
     </button>
   </div>
 
 </div>
      <Image src={'/images/barber-hero.jpg'} alt="Man haircut" fill className="object-cover" loading="eager" />
-     <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#000000]/75 to-[#000000]/10"/>
+     <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#000000]/90 to-[#000000]/10"/>
      <div className="absolute top-0 left-0 w-full h-1/2 bg-linear-to-b from-[#000000]/30 to-transparent"/>
      <div className="absolute bottom-0 left-0 w-full h-10 bg-linear-to-b from-transparent to-background/60"/>
      </div>
