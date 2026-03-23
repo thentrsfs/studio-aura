@@ -20,7 +20,7 @@ const Hero = () => {
     Moderní střihy, barvení a individuální péče
   </p>
 
-  <div className="flex gap-4">
+  <div className="flex gap-4 mt-10">
     <button className="py-2.5 px-10 rounded-lg bg-primary font-medium hover:bg-primary-hover transition cursor-pointer">
       Objednat se
     </button>
