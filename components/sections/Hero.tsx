@@ -29,7 +29,7 @@ const Hero = () => {
   </div>
 
 </div>
-     <Image src={'/images/barber-hero.jpg'} alt="Man haircut" fill className="object-cover" loading="eager" />
+     <Image src={'/images/barber-hero.jpg'} alt="Man haircut" fill className="object-cover object-[80%]" loading="eager" />
      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#000000]/90 to-[#000000]/10"/>
      <div className="absolute top-0 left-0 w-full h-1/2 bg-linear-to-b from-[#000000]/30 to-transparent"/>
      <div className="absolute bottom-0 left-0 w-full h-20 bg-linear-to-b from-transparent to-background/30"/>

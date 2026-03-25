@@ -3,13 +3,13 @@ const Logo = () => {
   return (
     <div className="flex items-center gap-2">
       <BarberChair/>
-      <span className="text-2xl text-white uppercase tracking-wide font-bold font-display">Studio Aura</span></div>
+      <span className="lg:text-2xl text-lg text-white uppercase tracking-wide font-bold font-display">Studio Aura</span></div>
   )
 }
 
 const BarberChair = () => {
   return (
-    <svg width="42" height="42" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" id="barber-chair">
+    <svg className="lg:w-12 lg:h-12 w-8 h-8" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" id="barber-chair">
   <linearGradient id="a" x1="79.126" x2="432.874" y1="481.796" y2="128.048" gradientUnits="userSpaceOnUse">
     <stop offset="0" stopColor="#66A8A3"></stop>
     <stop offset=".304" stopColor="#33918B"></stop>

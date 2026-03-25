@@ -10,13 +10,13 @@ import {
 
 const Služby = () => {
   return (
-    <div className="py-16 md:px-36" >
+    <div className="py-16 px-6 md:px-36" >
         <h2 className="text-4xl text-black font-sora font-semibold uppercase mb-6">Naše služby</h2>
         <p className="text-lg text-black/70">Vytváříme styl, který vám sedí – od střihu až po kompletní péči o vlasy.</p>
      <Carousel className="mt-10 relative">
   <CarouselContent className="cursor-grab active:cursor-grabbing">
     {services.map((service) => (
-      <CarouselItem key={service.id} className="md:basis-1/2 lg:basis-1/3">
+      <CarouselItem key={service.id} className=" lg:basis-1/3">
         <div className="relative h-100 md:h-125 overflow-hidden rounded-lg group">
           <Image
             src={service.image}
@@ -37,8 +37,8 @@ const Služby = () => {
     ))}
   </CarouselContent>
 
-  <CarouselPrevious className="p-5 lg:-left-20 cursor-pointer hover:bg-black/5 transition-all duration-300" />
-  <CarouselNext className="p-5 lg:-right-20 cursor-pointer hover:bg-black/5 transition-all duration-300" />
+  <CarouselPrevious className="p-5 lg:-left-20 left-2 cursor-pointer hover:bg-black/5 bg-background transition-all duration-300 disabled:opacity-0 opacity-100 " />
+  <CarouselNext className="p-5 lg:-right-20 right-2 cursor-pointer hover:bg-black/5 bg-background transition-all duration-300 disabled:opacity-0 opacity-100 " />
 </Carousel>
     </div>
   )
