@@ -3,8 +3,8 @@ import { Inter, Sora } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const display = Sora({
-  variable: "--font-display",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${inter.variable} h-full antialiased font-inter`}
+      className={`${sora.variable} ${inter.variable} h-full antialiased font-inter`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col ">

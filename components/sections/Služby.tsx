@@ -10,25 +10,24 @@ import {
 
 const Služby = () => {
   return (
-    <div className="py-16" >
-        <h2 className="text-4xl text-black font-display font-semibold uppercase mb-6 md:px-36">Naše služby</h2>
-        <p className="text-lg md:px-36 text-black/70">Moderní služby pro váš styl – od střihu až po kompletní péči o vlasy.</p>
-     <Carousel className="mt-10 px-36 relative" opts={{
-      loop: true
-     }}>
-  <CarouselContent>
+    <div className="py-16 md:px-36" >
+        <h2 className="text-4xl text-black font-sora font-semibold uppercase mb-6">Naše služby</h2>
+        <p className="text-lg text-black/70">Vytváříme styl, který vám sedí – od střihu až po kompletní péči o vlasy.</p>
+     <Carousel className="mt-10 relative">
+  <CarouselContent className="cursor-grab active:cursor-grabbing">
     {services.map((service) => (
       <CarouselItem key={service.id} className="md:basis-1/2 lg:basis-1/3">
-        <div className="relative h-100 md:h-125">
+        <div className="relative h-100 md:h-125 overflow-hidden rounded-lg group">
           <Image
             src={service.image}
             alt={service.name}
             fill
-            className="object-cover rounded-lg"
+            sizes="100%"
+            className="object-cover rounded-lg group-hover:scale-105 transition-transform duration-300 "
           />
 
-          <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/40 backdrop-blur-xs p-6 flex flex-col rounded-b-lg justify-center gap-2">
-            <h3 className="text-2xl text-white font-display font-semibold">
+          <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/40 group-hover:bg-black/60 backdrop-blur-xs p-6 flex flex-col rounded-b-lg justify-center gap-2 transition-all duration-300 select-none">
+            <h3 className="text-2xl text-white font-sora font-semibold">
               {service.name}
             </h3>
             <p className="text-white/80">{service.description}</p>
@@ -38,8 +37,8 @@ const Služby = () => {
     ))}
   </CarouselContent>
 
-  <CarouselPrevious className="md:left-20" />
-  <CarouselNext className="md:right-20" />
+  <CarouselPrevious className="p-5 lg:-left-20 cursor-pointer hover:bg-black/5 transition-all duration-300" />
+  <CarouselNext className="p-5 lg:-right-20 cursor-pointer hover:bg-black/5 transition-all duration-300" />
 </Carousel>
     </div>
   )

@@ -3,7 +3,7 @@ import Logo from "./Logo"
 
 const Nav = () => {
   return (
-    <div className="w-full pt-10 lg:px-36 flex items-center justify-between absolute top-0 z-20 text-white font-display uppercase">
+    <div className="w-full pt-10 lg:px-36 flex items-center justify-between absolute top-0 z-20 text-white font-sora text-sm uppercase">
 <Logo />
       <div className="flex items-center gap-12 tracking-wide">
         <div className="group flex flex-col">
