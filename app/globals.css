@@ -13,6 +13,11 @@
   --color-primary: #004643;
   --color-background: #faf4d3;
   --color-primary-hover: #003b3b;
-
-  
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+

@@ -7,7 +7,7 @@ const Nav = () => {
 <Logo />
       <div className="lg:flex items-center gap-12 tracking-wide hidden">
         <div className="group flex flex-col">
-<a href="">Služby</a>
+<a href="#sluzby">Služby</a>
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 <div className="group flex flex-col">

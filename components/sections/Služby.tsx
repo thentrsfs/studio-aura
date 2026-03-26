@@ -10,7 +10,7 @@ import {
 
 const Služby = () => {
   return (
-    <div className="py-16 px-6 md:px-36" >
+    <div id="sluzby" className="py-16 px-6 md:px-36" >
         <h2 className="lg:text-4xl text-3xl text-black font-sora font-semibold uppercase mb-6">Naše služby</h2>
         <p className="lg:text-lg text-black/70">Vytváříme styl, který vám sedí – od střihu až po kompletní péči o vlasy.</p>
      <Carousel className="mt-10 relative">
