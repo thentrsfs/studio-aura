@@ -10,7 +10,7 @@ import {
 
 const Služby = () => {
   return (
-    <div id="sluzby" className="px-6 md:px-36 min-h-dvh flex flex-col justify-center relative" >
+    <section id="sluzby" className="px-6 md:px-36 min-h-dvh flex flex-col justify-center relative" >
       <div className="absolute top-16 left-0 w-full px-6 md:px-36">
         <h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 relative">Naše <span className="text-primary">služby</span>
           <span className="block w-12 h-1 bg-primary mt-0.5"></span>
@@ -43,7 +43,7 @@ const Služby = () => {
   <CarouselPrevious className="p-5 cursor-pointer hover:scale-110 border-0 text-white left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-hover shadow-md transition-all duration-300 disabled:opacity-0 opacity-100 " />
   <CarouselNext className="p-5 cursor-pointer hover:scale-110 border-0 text-white right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-hover shadow-md transition-all duration-300 disabled:opacity-0 opacity-100 " />
 </Carousel>
-    </div>
+    </section>
   )
 }
 

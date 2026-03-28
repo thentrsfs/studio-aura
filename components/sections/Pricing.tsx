@@ -2,7 +2,7 @@
 
 const Pricing = () => {
   return (
-    <div id="cenik" className="py-16 px-6 md:px-36 text-white min-h-dvh bg-primary" >
+    <section id="cenik" className="py-16 px-6 md:px-36 text-white min-h-dvh bg-primary" >
         <h2 className="lg:text-4xl text-3xl font-sora font-semibold uppercase mb-6">Ceník</h2>
         <p className="lg:text-lg mb-8 text-white/70">Přehled našich služeb a orientačních cen.</p>
         <div className="grid lg:grid-cols-3 gap-8 mt-10">
@@ -32,7 +32,7 @@ const Pricing = () => {
             </div>
 <p className="text-white/70 text-sm">*Ceny se mohou lišit podle délky a hustoty vlasů.</p>
         </div>
-    </div>
+    </section>
   )
 }
 
