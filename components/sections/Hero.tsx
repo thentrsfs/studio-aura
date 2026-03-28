@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-     <section className="relative w-full lg:h-[75vh] h-[70vh]">
+     <section className="relative w-full h-dvh">
        <div className="absolute z-10 lg:top-1/2 bottom-30 left-8 md:left-36 lg:-translate-y-1/2 text-white lg:max-w-xl flex flex-col gap-5">
 
   <h3 className="text-sm md:text-base font-medium text-background">

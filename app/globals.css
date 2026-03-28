@@ -15,9 +15,13 @@
   --color-primary-hover: #003b3b;
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+}
+
+section {
+scroll-snap-align: start;
+height: 100vh;
 }
 
