@@ -39,7 +39,7 @@ export default function Home() {
      <Hero />
      <Služby/>
      <Pricing/>
-      <NavDots active={active} theme={theme} />
+     <NavDots active={active} theme={theme} />
      <SnapScroll/>
     </div>
   );
