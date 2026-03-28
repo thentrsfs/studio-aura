@@ -11,7 +11,7 @@ const Nav = () => {
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 <div className="group flex flex-col">
-<a href="">Cenik</a>
+<a href="#cenik">Cenik</a>
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 <div className="group flex flex-col">

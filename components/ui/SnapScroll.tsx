@@ -29,7 +29,7 @@ const SnapScroll = () => {
 
       setTimeout(() => {
         isScrolling = false;
-      }, 700); // controls speed
+      }, 1100); // controls speed
     };
 
     window.addEventListener("wheel", handleWheel);
