@@ -6,10 +6,12 @@ import Pricing from "@/components/sections/Pricing";
 import SnapScroll from "@/components/ui/SnapScroll";
 import NavDots from "@/components/ui/NavDots";
 import { useEffect, useState } from "react";
+import NavMobile from "@/components/ui/NavMobile";
 
 export default function Home() {
   const [active, setActive] = useState(0);
   const [theme, setTheme] = useState("dark");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Update active section on scroll
   useEffect(() => {
@@ -34,8 +36,9 @@ export default function Home() {
 }, []);
 
   return (
-    <div className="bg-background min-h-screen flex flex-col">
-     <Nav/>
+    <div className="bg-background min-h-screen flex flex-col relative">
+     <Nav active={active} theme={theme} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+     <NavMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
      <Hero />
      <Služby/>
      <Pricing/>

@@ -11,7 +11,7 @@ import {
 const Služby = () => {
   return (
     <section data-theme="light" id="sluzby" className="px-6 md:px-36 min-h-dvh flex flex-col justify-center relative" >
-      <div className="absolute top-16 left-0 w-full px-6 md:px-36">
+      <div className="absolute top-10 left-0 w-full px-6 md:px-36">
         <h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 relative">Naše <span className="text-primary">služby</span>
           <span className="block w-12 h-1 bg-primary mt-0.5"></span>
         </h2>
