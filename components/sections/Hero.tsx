@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-     <section data-theme="dark" className="relative w-full h-dvh">
+     <section id="hero" data-theme="dark" className="relative w-full h-dvh">
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
 <span className="text-sm text-white/70">Scroll</span>
 

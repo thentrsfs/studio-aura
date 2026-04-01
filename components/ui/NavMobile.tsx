@@ -5,6 +5,7 @@ import gsap from "gsap";
 const NavMobile = ({isMenuOpen, setIsMenuOpen} : {isMenuOpen: boolean, setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
 
   const menu = [
+    {name: "Home", href: "#hero"},
     {name: "Služby", href: "#sluzby"},
     {name: "Cenik", href: "#cenik"},
     {name: "Galerie", href: "#galerie"},
