@@ -15,7 +15,8 @@ export const prices = [
                 name: 'Dětský střih',
                 price: '250 Kč'
             }
-        ]
+        ],
+        icon: '/icons/scissors.png',
     },
     {
         id: 2,
@@ -33,7 +34,8 @@ export const prices = [
                 name: 'Melír',
                 price: 'od 1000 Kč'
             }
-        ]
+        ],
+        icon: '/icons/barveni.png',
     },
     {
         id: 3,
@@ -51,7 +53,8 @@ export const prices = [
                 name: 'Keratinová kúra',
                 price: 'od 1500 Kč'
             }
-        ]
+        ],
+        icon: '/icons/pece.png',
     },
     {
         id: 4,
@@ -69,7 +72,8 @@ export const prices = [
                 name: 'Účes na speciální příležitost',
                 price: 'od 500 Kč'
             }
-        ]
+        ],
+        icon: '/icons/dryer.png',
     },
     {
         id: 5,
@@ -83,6 +87,7 @@ export const prices = [
                 name: 'Kompletní péče pro muže',
                 price: 'od 500 Kč'
             }
-        ]
+        ],
+        icon: '/icons/beard.png',
     },
 ]
