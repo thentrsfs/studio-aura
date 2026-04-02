@@ -24,8 +24,7 @@ const Pricing = () => {
                 </div>
             ))}
         </div>
-<p className="text-white/70 text-sm mt-4">*Ceny se mohou lišit podle délky a hustoty vlasů.</p>
-<CustomButton className="mt-4 mx-auto" theme="secondary"/>
+<p className="text-white/70 text-xs mt-4">*Ceny se mohou lišit podle délky a hustoty vlasů.</p>
     </section>
   )
 }
