@@ -17,8 +17,8 @@ const Nav = ({active, theme, isMenuOpen, setIsMenuOpen} : {active: number, theme
   , [isMenuOpen]);
 
   return (
-    <div className="w-full pt-10 lg:px-36 px-6 flex items-center justify-between absolute top-0 z-26 text-white font-sora text-sm uppercase ">
-<Logo isMenuOpen={isMenuOpen}/>
+    <div className="w-full pt-10 lg:px-36 px-6 flex items-center justify-between lg:absolute fixed top-0 z-26 text-white font-sora text-sm uppercase ">
+<Logo isMenuOpen={isMenuOpen} className={active !== 0 ? 'opacity-0' : 'opacity-100'}/>
       <div className="lg:flex items-center gap-12 tracking-wide hidden">
         <div className="group flex flex-col">
 <a href="#sluzby">Služby</a>
@@ -38,9 +38,8 @@ const Nav = ({active, theme, isMenuOpen, setIsMenuOpen} : {active: number, theme
 </div>
 </div>
 <CustomButton className="max-lg:hidden"/>
-<button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`text-lg ${isMenuOpen ? 'text-black pr-3' : 'text-white'} font-medium lg:hidden font-sora z-26`}>{isMenuOpen ? <IoClose className="text-3xl" /> : 'Menu'}</button>
+<button onClick={() => setIsMenuOpen(!isMenuOpen)} className='font-medium lg:hidden font-sora z-26'>{isMenuOpen ? <IoClose className="text-4xl text-black pr-3" /> : <span className={` text-lg p-2 ${theme === 'dark' ? 'text-white backdrop-blur-lg rounded-xl' : 'text-black bg-background rounded-xl'}`}>Menu</span>}</button>
 
-<button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`text-lg ${isMenuOpen && 'text-black'} font-medium ${active === 0 ? 'opacity-0' :'opacity-100'} ${theme === 'dark' ? 'text-white' : 'text-black'} fixed right-6 top-10 lg:hidden font-sora z-26 transition-all duration-300`}>Menu</button>
     </div>
   )
 }

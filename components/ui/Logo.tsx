@@ -1,7 +1,7 @@
 
-const Logo = ({isMenuOpen} : {isMenuOpen: boolean}) => {
+const Logo = ({isMenuOpen, className} : {isMenuOpen: boolean, className?: string}) => {
   return (
-    <div className="flex items-center gap-2 z-21">
+    <div className={`flex items-center gap-2 z-21 ${className}`}>
       <BarberChair/>
       <span className={`lg:text-2xl text-lg ${isMenuOpen ? 'text-black' : 'text-white'} uppercase tracking-wide font-bold font-display`}>Studio Aura</span></div>
   )
