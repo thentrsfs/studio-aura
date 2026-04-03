@@ -10,7 +10,7 @@ import {
 
 const Služby = () => {
   return (
-    <section data-theme="light" id="sluzby" className="px-6 md:px-36 min-h-dvh flex flex-col py-10 gap-10 relative max-lg:pb-20" >
+    <section data-theme="light" id="sluzby" className="px-6 lg:px-36 min-h-dvh flex flex-col py-10 gap-10 relative " >
       <div>
         <h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 after:content-[''] after:block after:w-12 after:h-1 after:bg-primary after:mt-0.5">Naše <span className="text-primary">služby</span>
         </h2>
@@ -20,7 +20,7 @@ const Služby = () => {
   <CarouselContent className="cursor-grab active:cursor-grabbing">
     {services.map((service) => (
       <CarouselItem key={service.id} className=" lg:basis-1/3 ">
-        <div className="relative h-100 md:h-125 overflow-hidden rounded-lg group ">
+        <div className="relative h-100 lg:h-125 overflow-hidden rounded-lg group ">
           <Image
             src={service.image}
             alt={service.name}

@@ -2,11 +2,11 @@
 const Kontakt = () => {
   return (
     <section id="kontakt" data-theme="dark" className="min-h-dvh bg-primary text-white flex flex-col gap-10 relative pt-10">
-        <div className="px-6 md:px-36">
+        <div className="px-6 lg:px-36">
         <h2 className="lg:text-4xl text-3xl font-sora font-semibold uppercase mb-6 after:content-[''] after:block after:w-12 after:h-1 after:bg-background after:mt-0.5">Kontakt</h2>
         <p className="lg:text-lg text-white/70">Rádi se o vás postaráme. Kontaktujte nás a domluvte si svůj termín.</p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-10 items-center px-6 md:px-36">
+        <div className="grid lg:grid-cols-2 gap-10 items-center px-6 lg:px-36">
 <div>
    <div className="flex flex-col gap-4 mt-6 font-medium tracking-wide text-lg">
 
@@ -40,9 +40,9 @@ const Kontakt = () => {
     </div>
 
     {/* NAV */}
-    <div className="flex max-lg:flex-col lg:items-center lg:gap-3 gap-2">
+    <div className="flex max-md:flex-col md:items-center md:gap-3 gap-2">
       <h4 className="font-semibold font-sora">Navigace</h4>
-      <div className="w-px h-4 bg-primary mt-0.5 lg:block hidden"/>
+      <div className="w-px h-4 bg-primary mt-0.5 md:block hidden"/>
       <div className="flex items-center gap-4">
       <a href="#sluzby" className="hover:underline">Služby</a>
       <a href="#cenik" className="hover:underline">Ceník</a>
@@ -52,10 +52,10 @@ const Kontakt = () => {
     </div>
 
     {/* CONTACT */}
-    <div className="flex max-lg:flex-col lg:items-center lg:gap-3 gap-2">
+    <div className="flex max-md:flex-col md:items-center md:gap-3 gap-2">
       <h4 className="font-semibold font-sora">Kontakt</h4>
         <div className="flex gap-3">
-      <div className="w-px h-4 bg-primary mt-0.5 lg:block hidden"/>
+      <div className="w-px h-4 bg-primary mt-0.5 md:block hidden"/>
       <a href="tel:+420123456789">+420 123 456 789</a>
       <p>Pardubice</p>
       </div>

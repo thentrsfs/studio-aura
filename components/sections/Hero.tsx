@@ -12,17 +12,17 @@ const Hero = () => {
   <div className="w-1 h-2 bg-white rounded-full animate-bounce" />
 </div>
       </div>
-       <div className="absolute z-10 md:top-1/2 md:left-36 bottom-1/3 left-6 md:-translate-y-1/2 text-white max-w-xl flex flex-col gap-5">
+       <div className="absolute z-10 lg:top-1/2 lg:left-36 bottom-1/3 left-6 lg:-translate-y-1/2 text-white max-w-xl flex flex-col gap-5">
 
-  <h3 className="text-sm md:text-base font-medium text-background">
+  <h3 className="text-sm lg:text-base font-medium text-background">
     Kadeřnictví v Pardubicích
   </h3>
 
-  <h1 className="text-[40px] md:text-7xl font-bold uppercase font-sora tracking-tight leading-[1.1]">
+  <h1 className="text-[40px] lg:text-7xl font-bold uppercase font-sora tracking-tight leading-[1.1]">
     Studio Aura
   </h1>
 
-  <p className="text-white/70 text-base md:text-lg lg:max-w-md">
+  <p className="text-white/70 text-base lg:text-lg lg:max-w-md">
     Moderní střihy, barvení a individuální péče
   </p>
 

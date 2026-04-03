@@ -18,11 +18,21 @@
 
 html {
 scroll-snap-type: y mandatory;
-scroll-behavior: smooth;
 }
 
 section {
 scroll-snap-align: start;
-scroll-snap-stop: always;
 min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

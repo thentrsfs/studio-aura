@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Pricing = () => {
   return (
-    <section data-theme="dark" id="cenik" className="py-10 px-6 md:px-36 text-white min-h-dvh bg-primary flex flex-col gap-10 max-lg:pb-20" >
+    <section data-theme="dark" id="cenik" className="py-10 px-6 lg:px-36 text-white min-h-dvh bg-primary flex flex-col gap-10" >
         <div>
         <h2 className="lg:text-4xl text-3xl font-sora font-semibold uppercase mb-6 after:content-[''] after:block after:w-12 after:h-1 after:bg-background after:mt-0.5">Ceník</h2>
         <p className="lg:text-lg text-white/70">Přehled našich služeb a orientačních cen.</p>
