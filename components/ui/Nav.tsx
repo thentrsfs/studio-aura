@@ -37,7 +37,7 @@ const Nav = ({active, theme, isMenuOpen, setIsMenuOpen} : {active: number, theme
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 </div>
-<CustomButton/>
+<CustomButton className="max-lg:hidden"/>
 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`text-lg ${isMenuOpen ? 'text-black pr-3' : 'text-white'} font-medium lg:hidden font-sora z-26`}>{isMenuOpen ? <IoClose className="text-3xl" /> : 'Menu'}</button>
 
 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`text-lg ${isMenuOpen && 'text-black'} font-medium ${active === 0 ? 'opacity-0' :'opacity-100'} ${theme === 'dark' ? 'text-white' : 'text-black'} fixed right-6 top-10 lg:hidden font-sora z-26 transition-all duration-300`}>Menu</button>
