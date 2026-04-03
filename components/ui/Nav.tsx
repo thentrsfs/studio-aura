@@ -29,11 +29,11 @@ const Nav = ({active, theme, isMenuOpen, setIsMenuOpen} : {active: number, theme
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 <div className="group flex flex-col">
-<a href="">Galerie</a>
+<a href="#galerie">Galerie</a>
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 <div className="group flex flex-col">
-<a href="">Kontakt</a>
+<a href="#kontakt">Kontakt</a>
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 </div>

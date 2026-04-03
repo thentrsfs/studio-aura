@@ -2,7 +2,7 @@
 
 const NavDots = ({active, theme} : {active: number, theme: string}) => {
 
-  const sections = ["#hero", "#sluzby", "#cenik", "#galerie"];
+  const sections = ["#hero", "#sluzby", "#cenik", "#galerie", "#kontakt"];
 
   return (
         <div className="fixed right-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3 z-50">
