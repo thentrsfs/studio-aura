@@ -20,13 +20,13 @@ const Služby = () => {
   <CarouselContent className="cursor-grab active:cursor-grabbing">
     {services.map((service) => (
       <CarouselItem key={service.id} className=" lg:basis-1/3 ">
-        <div className="relative h-100 md:h-125 overflow-hidden rounded-xl group ">
+        <div className="relative h-100 md:h-125 overflow-hidden rounded-lg group ">
           <Image
             src={service.image}
             alt={service.name}
             fill
             sizes="100%"
-            className="object-cover rounded-xl group-hover:scale-105 transition-all duration-300 hover:brightness-85"
+            className="object-cover rounded-lg group-hover:scale-105 transition-all duration-300 hover:brightness-85"
           />
           <div className="absolute bottom-0 left-0 w-full h-35 bg-black/40 group-hover:bg-black/60 backdrop-blur-xs p-6 flex flex-col rounded-b-lg justify-center gap-2 transition-all duration-300 select-none ">
             <h3 className="lg:text-2xl text-xl text-white font-sora font-semibold">
