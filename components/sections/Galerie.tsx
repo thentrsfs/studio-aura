@@ -23,7 +23,7 @@ const Galerie = () => {
     }
 
   return (
-    <section data-theme="light" id="galerie" className="min-h-dvh bg-background px-6 md:px-36 flex flex-col gap-10 relative py-10">
+    <section data-theme="light" id="galerie" className="min-h-dvh bg-background px-6 md:px-36 flex flex-col gap-10 relative py-10 max-lg:pb-20">
         <div>
             <h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 after:content-[''] after:block after:w-12 after:h-1 after:bg-primary after:mt-0.5">Galerie</h2>
             <p className="lg:text-lg text-black/60 max-w-md">Ukázky naší práce.</p>

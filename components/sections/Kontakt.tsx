@@ -1,4 +1,3 @@
-import CustomButton from "@/components/ui/CustomButton";
 
 const Kontakt = () => {
   return (
