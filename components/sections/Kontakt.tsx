@@ -1,10 +1,14 @@
+import MobileMenuBtn from "../ui/MobileMenuBtn"
 
-const Kontakt = () => {
+const Kontakt = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen: boolean, setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
     <section id="kontakt" data-theme="dark" className="min-h-dvh bg-primary text-white flex flex-col gap-10 relative pt-10">
         <div className="px-6 lg:px-36">
         <h2 className="lg:text-4xl text-3xl font-sora font-semibold uppercase mb-6 after:content-[''] after:block after:w-12 after:h-1 after:bg-background after:mt-0.5">Kontakt</h2>
         <p className="lg:text-lg text-white/70">Rádi se o vás postaráme. Kontaktujte nás a domluvte si svůj termín.</p>
+        </div>
+         <div className="lg:hidden absolute top-10 right-6">
+        <MobileMenuBtn isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme}/>
         </div>
         <div className="grid lg:grid-cols-2 gap-10 items-center px-6 lg:px-36">
 <div>

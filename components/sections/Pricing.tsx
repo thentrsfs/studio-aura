@@ -1,12 +1,16 @@
 import { prices } from "@/data/prices"
 import Image from "next/image"
+import MobileMenuBtn from "../ui/MobileMenuBtn"
 
-const Pricing = () => {
+const Pricing = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen: boolean, setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
-    <section data-theme="dark" id="cenik" className="py-10 px-6 lg:px-36 text-white min-h-dvh bg-primary flex flex-col gap-10" >
+    <section data-theme="dark" id="cenik" className="py-10 px-6 lg:px-36 text-white min-h-dvh bg-primary flex flex-col gap-10 relative" >
         <div>
         <h2 className="lg:text-4xl text-3xl font-sora font-semibold uppercase mb-6 after:content-[''] after:block after:w-12 after:h-1 after:bg-background after:mt-0.5">Ceník</h2>
         <p className="lg:text-lg text-white/70">Přehled našich služeb a orientačních cen.</p>
+        </div>
+         <div className="lg:hidden absolute top-10 right-6">
+        <MobileMenuBtn isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme}/>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
             {prices.map((category) => (

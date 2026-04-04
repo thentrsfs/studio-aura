@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useState } from "react"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import MobileMenuBtn from "../ui/MobileMenuBtn";
 
 export const images = [
     {src: '/images/galerie/galerie1.jpg', alt: 'Image 1'},
@@ -13,7 +14,7 @@ export const images = [
     {src: '/images/galerie/galerie6.jpg', alt: 'Image 6'},
 ]
 
-const Galerie = () => {
+const Galerie = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen: boolean, setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<number | undefined>(undefined);
 
@@ -28,7 +29,9 @@ const Galerie = () => {
             <h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 after:content-[''] after:block after:w-12 after:h-1 after:bg-primary after:mt-0.5">Galerie</h2>
             <p className="lg:text-lg text-black/60 max-w-md">Ukázky naší práce.</p>
         </div>
-
+ <div className="lg:hidden absolute top-10 right-6">
+        <MobileMenuBtn isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme}/>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {images.map((image, index) => (
                 <div onClick={() => openLightbox(index)} key={index} className="relative group overflow-hidden rounded-lg cursor-pointer w-full h-60 lg:h-80">
