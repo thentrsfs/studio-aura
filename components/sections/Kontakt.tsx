@@ -1,4 +1,5 @@
 import MobileMenuBtn from "../ui/MobileMenuBtn"
+import Form from '@/components/ui/Form'
 
 const Kontakt = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen: boolean, setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
@@ -11,27 +12,29 @@ const Kontakt = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen
         <MobileMenuBtn isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme}/>
         </div>
         <div className="grid lg:grid-cols-2 gap-10 items-center px-6 lg:px-36">
-<div>
-   <div className="flex flex-col gap-4 mt-6 font-medium tracking-wide text-lg">
 
-  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-8 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
+   <div className="flex flex-col gap-4 mt-6 font-medium tracking-wide ">
+
+  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-4 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
     <span>📞</span>
     <a href="tel:+420123456789" className="hover:underline">
       +420 123 456 789
     </a>
   </div>
 
-  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-8 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
+  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-4 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
     <span>📍</span>
     <p>Pardubice</p>
   </div>
 
-  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-8 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
+  <div className="flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur p-4 rounded-xl hover:shadow-2xl hover:scale-101 transition-all duration-300 shadow-lg">
     <span>🕒</span>
     <p>Po–Pá: 9:00 – 18:00</p>
   </div>
+
+  <Form/>
 </div>
-</div>
+
     <iframe className="w-full lg:h-120 rounded-xl shadow-lg border-5 border-white/10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82007.52918847471!2d15.676048253770366!3d50.03505584517829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dc94b239307b5%3A0x12d59894ccf624ae!2z0J_QsNGA0LTRg9Cx0LjRhtC1!5e0!3m2!1ssr!2scz!4v1775219406732!5m2!1ssr!2scz" loading="lazy" ></iframe>
         </div>
         <footer className="w-full block mt-auto bg-background text-primary lg:py-3 py-5">
