@@ -39,7 +39,7 @@ const Nav = ({active, theme, isMenuOpen, setIsMenuOpen} : {active: number, theme
 <span className="group-hover:w-full w-0 h-px bg-white transition-all duration-300 "></span>
 </div>
 </div>
-<CustomButton className="max-lg:hidden"/>
+<CustomButton className="max-lg:hidden normal-case" href="#kontakt"/>
 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='font-medium lg:hidden font-sora z-26'>{isMenuOpen ? <IoClose className="text-3xl text-black" /> : <HiOutlineMenu className={`text-3xl ${theme === 'dark' ? 'text-white' : 'text-primary'}`} />}</button>
 
     </div>

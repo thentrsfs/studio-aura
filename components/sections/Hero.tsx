@@ -61,7 +61,7 @@ const Hero = () => {
   </p>
 
   <div className="flex gap-4 mt-10 hero-buttons">
-    <CustomButton/>
+    <CustomButton href="#kontakt"/>
 
     <button className="py-2.5 px-10 rounded-lg border border-background text-white bg-background/5 font-medium hover:bg-background/10 transition cursor-pointer">
       Zavolat
