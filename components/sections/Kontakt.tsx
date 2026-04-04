@@ -37,10 +37,11 @@ const Kontakt = ({theme, isMenuOpen, setIsMenuOpen} : {theme: string, isMenuOpen
 
     <iframe className="w-full lg:h-120 rounded-xl shadow-lg border-5 border-white/10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82007.52918847471!2d15.676048253770366!3d50.03505584517829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dc94b239307b5%3A0x12d59894ccf624ae!2z0J_QsNGA0LTRg9Cx0LjRhtC1!5e0!3m2!1ssr!2scz!4v1775219406732!5m2!1ssr!2scz" loading="lazy" ></iframe>
         </div>
-        <footer className="w-full block mt-auto bg-background text-primary lg:py-3 py-5">
-  <div className="w-full mx-auto px-6 flex max-lg:flex-col max-lg:gap-8 justify-between lg:items-center">
-    <div className="flex max-lg:flex-col lg:gap-4 gap-2 lg:items-center">
+        <footer className="w-full lg:px-36 px-6 block mt-auto bg-background text-primary lg:py-3 py-5">
+  <div className="w-full mx-auto flex max-lg:flex-col max-lg:gap-8 justify-between lg:items-center">
+    <div className="flex max-lg:flex-col lg:gap-3 gap-2 lg:items-center">
       <a href="#hero" className="text-lg font-bold uppercase font-sora">Studio Aura</a>
+      <div className="w-px h-4 bg-primary mt-0.5 md:block hidden"/>
       <p className="text-primary/70 text-sm font-medium">
         Vytváříme styl, který vám sedí.
       </p>
