@@ -5,13 +5,14 @@ import Logo from "./Logo";
 
 gsap.registerPlugin(useGSAP);
 
-const SplashScreen = () => {
+const SplashScreen = ({onFinish} : {onFinish: () => void}) => {
 
     const splashScreen = useRef<HTMLDivElement>(null);
     const logoRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            onComplete: onFinish});
 
         tl.to(logoRef.current,{
             clipPath: "inset(0% 0% 100% 0%)",

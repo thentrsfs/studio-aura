@@ -15,6 +15,7 @@ export default function Home() {
   const [active, setActive] = useState(0);
   const [theme, setTheme] = useState("dark");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   // Update active section on scroll
   useEffect(() => {
@@ -39,6 +40,8 @@ export default function Home() {
 }, []);
 
   return (
+    <>
+    {loading && <SplashScreen onFinish={() => setLoading(false)} />}
     <div className="bg-background min-h-screen flex flex-col relative">
      <Nav active={active} theme={theme} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
      <NavMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
@@ -49,7 +52,7 @@ export default function Home() {
      <Kontakt theme={theme} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
      <NavDots active={active} theme={theme} />
      <SnapScroll/>
-      <SplashScreen />
     </div>
+    </>
   );
 }
