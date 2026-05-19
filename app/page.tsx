@@ -21,8 +21,6 @@ export default function Home() {
 	useEffect(() => {
 		const sections = document.querySelectorAll('section');
 
-		if (window.innerWidth < 1024) return;
-
 		const onScroll = () => {
 			const index = [...sections].findIndex((section) => {
 				const rect = section.getBoundingClientRect();
@@ -58,26 +56,10 @@ export default function Home() {
 					setIsMenuOpen={setIsMenuOpen}
 				/>
 				<Hero />
-				<Služby
-					theme={theme}
-					isMenuOpen={isMenuOpen}
-					setIsMenuOpen={setIsMenuOpen}
-				/>
-				<Pricing
-					theme={theme}
-					isMenuOpen={isMenuOpen}
-					setIsMenuOpen={setIsMenuOpen}
-				/>
-				<Galerie
-					theme={theme}
-					isMenuOpen={isMenuOpen}
-					setIsMenuOpen={setIsMenuOpen}
-				/>
-				<Kontakt
-					theme={theme}
-					isMenuOpen={isMenuOpen}
-					setIsMenuOpen={setIsMenuOpen}
-				/>
+				<Služby />
+				<Pricing />
+				<Galerie />
+				<Kontakt />
 				<NavDots
 					active={active}
 					theme={theme}

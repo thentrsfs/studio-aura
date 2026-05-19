@@ -28,7 +28,7 @@ const Nav = ({
 	}, [isMenuOpen]);
 
 	return (
-		<div className='w-full pt-10 lg:px-36 px-6 flex items-center justify-between absolute top-0 z-26 text-white font-sora text-sm uppercase'>
+		<div className='w-full pt-10 lg:px-36 px-6 flex items-center justify-between lg:absolute fixed top-0 z-26 text-white font-sora text-sm uppercase'>
 			<Logo
 				isMenuOpen={isMenuOpen}
 				className={active !== 0 ? 'opacity-0' : 'opacity-100'}
