@@ -20,10 +20,21 @@ const Nav = ({
 	// Lock scroll when menu is open
 	useEffect(() => {
 		if (!isMenuOpen) return;
-		document.body.style.position = 'fixed';
+
+		const preventScroll = (e: Event) => e.preventDefault();
+		const preventKeys = (e: KeyboardEvent) => {
+			const keys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Space'];
+			if (keys.includes(e.code)) e.preventDefault();
+		};
+
+		window.addEventListener('wheel', preventScroll, { passive: false });
+		window.addEventListener('touchmove', preventScroll, { passive: false });
+		window.addEventListener('keydown', preventKeys);
 
 		return () => {
-			document.body.style.position = '';
+			window.removeEventListener('wheel', preventScroll);
+			window.removeEventListener('touchmove', preventScroll);
+			window.removeEventListener('keydown', preventKeys);
 		};
 	}, [isMenuOpen]);
 
