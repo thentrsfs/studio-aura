@@ -11,11 +11,16 @@ const Nav = ({
 	theme,
 	isMenuOpen,
 	setIsMenuOpen,
+	handleSectionChange,
 }: {
 	active: number;
 	theme: string;
 	isMenuOpen: boolean;
 	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	handleSectionChange: (
+		e: React.MouseEvent<HTMLAnchorElement>,
+		sectionId: string,
+	) => void;
 }) => {
 	// Lock scroll when menu is open
 	useEffect(() => {
@@ -46,25 +51,42 @@ const Nav = ({
 			/>
 			<div className='lg:flex items-center gap-12 tracking-wide hidden'>
 				<div className='group flex flex-col'>
-					<Link href='#sluzby'>Služby</Link>
+					<Link
+						href='/#sluzby'
+						onClick={(e) => handleSectionChange(e, 'sluzby')}>
+						Služby
+					</Link>
 					<span className='group-hover:w-full w-0 h-px bg-white transition-all duration-300 '></span>
 				</div>
 				<div className='group flex flex-col'>
-					<Link href='#cenik'>Cenik</Link>
+					<Link
+						href='/#cenik'
+						onClick={(e) => handleSectionChange(e, 'cenik')}>
+						Cenik
+					</Link>
 					<span className='group-hover:w-full w-0 h-px bg-white transition-all duration-300 '></span>
 				</div>
 				<div className='group flex flex-col'>
-					<Link href='#galerie'>Galerie</Link>
+					<Link
+						href='/#galerie'
+						onClick={(e) => handleSectionChange(e, 'galerie')}>
+						Galerie
+					</Link>
 					<span className='group-hover:w-full w-0 h-px bg-white transition-all duration-300 '></span>
 				</div>
 				<div className='group flex flex-col'>
-					<Link href='#kontakt'>Kontakt</Link>
+					<Link
+						href='/#kontakt'
+						onClick={(e) => handleSectionChange(e, 'kontakt')}>
+						Kontakt
+					</Link>
 					<span className='group-hover:w-full w-0 h-px bg-white transition-all duration-300 '></span>
 				</div>
 			</div>
 			<CustomButton
 				className='max-lg:hidden normal-case'
 				href='#kontakt'
+				handleClick={(e) => handleSectionChange(e, 'kontakt')}
 			/>
 			<button
 				onClick={() => setIsMenuOpen(!isMenuOpen)}

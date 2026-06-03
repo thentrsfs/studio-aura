@@ -41,6 +41,24 @@ export default function Home() {
 		return () => window.removeEventListener('scroll', onScroll);
 	}, []);
 
+	const handleSectionChange = (
+		e: React.MouseEvent<HTMLAnchorElement>,
+		sectionId: string,
+	) => {
+		e.preventDefault();
+
+		const section = document.getElementById(sectionId);
+
+		if (!section) return;
+
+		section.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+
+		window.history.replaceState(null, '', `#${sectionId}`);
+	};
+
 	return (
 		<>
 			{loading && <SplashScreen onFinish={() => setLoading(false)} />}
@@ -50,12 +68,13 @@ export default function Home() {
 					theme={theme}
 					isMenuOpen={isMenuOpen}
 					setIsMenuOpen={setIsMenuOpen}
+					handleSectionChange={handleSectionChange}
 				/>
 				<NavMobile
 					isMenuOpen={isMenuOpen}
 					setIsMenuOpen={setIsMenuOpen}
 				/>
-				<Hero />
+				<Hero handleSectionChange={handleSectionChange} />
 				<Služby />
 				<Pricing />
 				<Galerie />
