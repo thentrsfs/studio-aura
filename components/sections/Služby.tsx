@@ -13,7 +13,7 @@ const Služby = () => {
 		<section
 			data-theme='light'
 			id='sluzby'
-			className='px-6 lg:px-36 min-h-dvh flex flex-col py-10 gap-10 relative '>
+			className='px-6 lg:px-36 min-h-dvh flex flex-col py-10 gap-10 relative'>
 			<div>
 				<h2 className="lg:text-4xl text-3xl text-black font-sora font-bold uppercase mb-4 after:content-[''] after:block after:w-12 after:h-1 after:bg-primary after:mt-0.5">
 					Naše <span className='text-primary'>služby</span>
@@ -23,7 +23,7 @@ const Služby = () => {
 					vlasy.
 				</p>
 			</div>
-			<Carousel className='mt-10 relative'>
+			<Carousel className='lg:mt-10 md:mt-30 my-auto relative'>
 				<CarouselContent className='cursor-grab active:cursor-grabbing'>
 					{services.map((service) => (
 						<CarouselItem
